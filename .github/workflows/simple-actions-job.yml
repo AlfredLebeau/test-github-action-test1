@@ -12,4 +12,4 @@ jobs:
         with:
           who-to-greet: Frederic
       - name: FV Log Greeting Time
-        run: echo "${{ step.fvgreet.outputs.time }}"
+        run: echo "${{ steps.fvgreet.outputs.time }}"
