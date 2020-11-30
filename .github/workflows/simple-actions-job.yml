@@ -1,9 +1,9 @@
-name: FV1 Actions Workflow
+name: FV2 Actions Workflow
 
 on: [push]
 
 jobs:
-  run-github-actions2:
+  fv-run-github-actions:
     runs-on: ubuntu-latest
     steps:
       - name: FV List Files
