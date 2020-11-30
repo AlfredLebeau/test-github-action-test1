@@ -6,10 +6,16 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List Files
+      - name: FV List Files
         run: |
           pwd
-          ls
+          ls -a
+      - name: FV Checkout
+        uses: actions/checkout@v1
+      - name: FV List Files AFTER checkout
+        run: |
+          pwd
+          ls -a
       - name: FV Simple JavaScript Actions
         id: fvgreet
         uses: actions/hello-world-javascript-action@v1
