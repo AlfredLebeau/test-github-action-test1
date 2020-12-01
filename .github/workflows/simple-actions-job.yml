@@ -1,4 +1,4 @@
-name: FV3 Actions Workflow
+name: FV5 Actions Workflow
 
 on: [push, pull_request]
 
