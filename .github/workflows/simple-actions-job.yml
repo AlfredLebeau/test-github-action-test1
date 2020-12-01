@@ -1,6 +1,6 @@
 name: FV2 Actions Workflow
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   fv-run-github-actions:
