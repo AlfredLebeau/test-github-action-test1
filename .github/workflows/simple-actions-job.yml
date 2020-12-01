@@ -1,6 +1,10 @@
 name: FV5 Actions Workflow
 
-on: [push, pull_request]
+# on: [push, pull_request]
+on:
+  push:
+  pull_request:
+    types: [closed, assigned, opened, reopened]
 
 jobs:
   fv-run-github-actions:
